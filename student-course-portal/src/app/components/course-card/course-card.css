@@ -1,0 +1,126 @@
+:host {
+  display: block;
+}
+
+.course-card {
+  height: 100%;
+  min-height: 240px;
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5fc 100%);
+  border: 1px solid rgba(21, 101, 192, 0.1);
+  border-left: 6px solid transparent;
+  box-shadow: 0 12px 28px rgba(18, 50, 74, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, min-height 0.2s ease;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #62809a;
+  font-size: 0.9rem;
+}
+
+h2 {
+  margin: 0.9rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #12324a;
+}
+
+.course-credits {
+  margin: 0.35rem 0 1rem;
+  color: #4a677f;
+}
+
+.grade-status {
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.status-badge--passed {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+}
+
+.status-badge--failed {
+  background: rgba(198, 40, 40, 0.12);
+  color: #c62828;
+}
+
+.status-badge--pending {
+  background: rgba(107, 114, 128, 0.14);
+  color: #4b5563;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.details-button,
+.enroll-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.75rem 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.details-button {
+  background: #dbeafe;
+  color: #174a7c;
+}
+
+.enroll-button {
+  background: #1565c0;
+  color: #ffffff;
+}
+
+.details-button:hover,
+.enroll-button:hover {
+  transform: translateY(-1px);
+}
+
+.details-button:hover {
+  background: #c6dcfb;
+}
+
+.enroll-button:hover {
+  background: #0f5ab0;
+}
+
+.course-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(21, 101, 192, 0.12);
+  color: #4a677f;
+  line-height: 1.7;
+}
+
+.course-details p {
+  margin: 0;
+}
+
+.card--enrolled {
+  box-shadow: 0 16px 36px rgba(21, 101, 192, 0.16);
+}
+
+.card--full {
+  background: linear-gradient(180deg, #f2f8ff 0%, #e5f0ff 100%);
+}
+
+.expanded {
+  min-height: 320px;
+}

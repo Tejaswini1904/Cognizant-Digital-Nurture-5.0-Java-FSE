@@ -1,0 +1,23 @@
+angular.json
+Configuration file for Angular build, serve and project settings.
+
+tsconfig.json
+Main TypeScript configuration.
+
+tsconfig.app.json
+TypeScript configuration specific to the Angular application.
+
+package.json
+Contains project dependencies and npm scripts.
+
+src/main.ts
+Application entry point that bootstraps Angular.
+
+app.config.ts
+Standalone Angular configuration for providers and routing.
+
+app.component.ts
+Root component of the application.
+
+index.html
+Main HTML page where Angular loads.

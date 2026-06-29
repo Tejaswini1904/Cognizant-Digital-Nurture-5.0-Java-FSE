@@ -1,0 +1,60 @@
+<section class="home-shell">
+  <div class="hero-card">
+    <p class="eyebrow">Home</p>
+
+
+    <h1>Welcome to {{ portalName }}</h1>
+
+    <p class="lead">
+      Manage courses, explore academic programs, and track your student journey
+      from one modern portal.
+    </p>
+
+    <div class="action-row">
+
+      <button type="button" class="primary-button" [disabled]="!isPortalActive" (click)="onEnrollClick()">
+        Enroll Now
+      </button>
+
+
+      <span class="portal-status">
+        Portal status: {{ isPortalActive ? 'Active' : 'Inactive' }}
+      </span>
+    </div>
+
+    @if (message) {
+      <p class="status-message">{{ message }}</p>
+    }
+  </div>
+
+  <div class="binding-card">
+    <h2>Search Courses</h2>
+
+
+    <label class="search-label" for="course-search">Course search</label>
+    <input
+      id="course-search"
+      type="text"
+      class="search-input"
+      placeholder="Search by course name or code"
+      [(ngModel)]="searchTerm"
+    />
+
+    <p class="search-result">Searching for: {{ searchTerm }}</p>
+  </div>
+
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span>Courses Available</span>
+      <strong>12</strong>
+    </article>
+    <article class="stat-card">
+      <span>Enrolled</span>
+      <strong>3</strong>
+    </article>
+    <article class="stat-card">
+      <span>GPA</span>
+      <strong>3.8</strong>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="page-card">
+  <p class="eyebrow">Courses</p>
+  <h1>Explore your enrolled and available courses</h1>
+  <p class="description">
+    Browse course materials, track progress, and stay on top of upcoming work.
+  </p>
+
+  <p class="selected-course">Selected Course ID: {{ selectedCourseId }}</p>
+
+  <div *ngIf="isLoading; else courseState" class="loading-state">
+    Loading courses...
+  </div>
+
+  <ng-template #courseState>
+    <div *ngIf="courses.length > 0; else emptyCourses" class="course-grid">
+      <app-course-card
+        *ngFor="let c of courses; trackBy: trackByCourseId"
+        [course]="c"
+        appHighlight="lightblue"
+        (enrollRequested)="onEnroll($event)"
+      />
+    </div>
+  </ng-template>
+
+  <ng-template #emptyCourses>
+    <p class="empty-state">No courses available.</p>
+  </ng-template>
+</section>

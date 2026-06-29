@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <a class="brand" routerLink="/" aria-label="Student Course Portal home">
+    Student Course Portal
+  </a>
+
+  <div class="nav-links">
+    <a
+      routerLink="/"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </a>
+    <a routerLink="/courses" routerLinkActive="active-link">Courses</a>
+    <a routerLink="/profile" routerLinkActive="active-link">Profile</a>
+  </div>
+</nav>
