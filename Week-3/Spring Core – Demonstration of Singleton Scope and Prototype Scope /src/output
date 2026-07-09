@@ -1,0 +1,14 @@
+Employee Object Created
+
+===== Singleton Scope =====
+
+Object 1 HashCode : 1468177767
+Object 2 HashCode : 1468177767
+
+===== Prototype Scope =====
+
+Employee Object Created
+Employee Object Created
+
+Object 3 HashCode : 134856211
+Object 4 HashCode : 658931472
